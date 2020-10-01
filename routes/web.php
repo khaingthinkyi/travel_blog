@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('backendtemplate');
 });
+
+Route::resource('city','CityController');
+Route::resource('location','LocationController');
+Route::resource('hotel','HotelController');
+Route::resource('post','PostController');
